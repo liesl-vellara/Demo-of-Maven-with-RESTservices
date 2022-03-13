@@ -1,0 +1,48 @@
+Status: FAILED
+Time Taken: 1998
+Size: 86
+Timestamp: Sun Mar 13 19:03:38 IST 2022
+TestStep: Login
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code:500 is not in acceptable list of status codes
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://ecommerceservice.herokuapp.com
+Method: POST
+StatusCode: 500
+URL: https://ecommerceservice.herokuapp.com/user/login
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [ecommerceservice.herokuapp.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [56]
+Content-Type: [application/json]
+
+POST https://ecommerceservice.herokuapp.com/user/login HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 56
+Host: ecommerceservice.herokuapp.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+
+---------------- Response --------------------------
+Server: [Cowboy]
+Etag: [W/"56-45ZJXZZ0w8rqxDNodmCFCckuo10"]
+Access-Control-Allow-Origin: [*]
+Connection: [keep-alive]
+#status#: [HTTP/1.1 500 Internal Server Error]
+Content-Length: [86]
+Access-Control-Allow-Headers: [Origin, X-Requested-With, Content-Type, Accept, Authorization]
+Date: [Sun, 13 Mar 2022 13:33:46 GMT]
+X-Powered-By: [Express]
+Content-Type: [application/json; charset=utf-8]
+Via: [1.1 vegur]
+
+{"message":"loginUser Server error","error":"Cannot read property 'password' of null"}
